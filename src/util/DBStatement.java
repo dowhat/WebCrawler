@@ -4,9 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
-/**
- * Created by Administrator on 2016/9/12.
- */
+
 public class DBStatement{
 
     Statement stmt;
@@ -17,9 +15,9 @@ public class DBStatement{
             /**
              * jdbc四大配置参数：
              * 1.driverClassName:com.mysql.jdbc.Driver
-             * 2.url:jdbc:mysql://localhost:3306/mydb
-             * 3.username:root
-             * 4.password:123
+             * 2.url:jdbc:mysql://localhost:3306/crawler
+             * 3.username:admin
+             * 4.password:123456
              */
             Class.forName("com.mysql.jdbc.Driver");//加载驱动类(注册驱动类)
             String mySqlUrl = "jdbc:mysql://localhost:3306/crawler";

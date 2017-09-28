@@ -98,7 +98,7 @@ public class IKAnalyze {
     	dt.DateToText("D:/中国好声音词频分析1.txt", sortByValue(result));
     	return result;
     }
-    //获取分词结果的第二种方式
+    //获取分词结果的第二种方式,多态，考虑到stringReader数据缓存区有限，通过List多次分词
     public static Map<String,Integer> analyzeWordFrequency2(List<String> titleList) throws Exception{
     	Map<String,Integer> result = new HashMap<String, Integer>();
     	Set<String> wordSet = new HashSet<>();

@@ -69,7 +69,7 @@ public class TieziInfoBean {
 		
 		//帖子链接去重
 		Set<String> tieziUrlSet = new HashSet<>();
-		for(int i=0;i<200;i++){
+		for(int i=0;i<100;i++){
 			System.out.println(url + "&ie=utf-8&pn=" + (i*50));
 			HtmlParse html = new HtmlParse(url + "&ie=utf-8&pn=" + (i*50));
 			tiebaContext = html.parser();

@@ -92,6 +92,7 @@ public class DBtoText {
 	    }
 	    return title;
 	}
+	
 	public List<String> getTitleStringList(){
 		//获取帖子的标题 rs.getString(3) 返回之
 		List<String> titleList = new ArrayList<>();
